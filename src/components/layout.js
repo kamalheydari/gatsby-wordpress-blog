@@ -1,7 +1,8 @@
 import React from "react";
 import { GlobalStyles as BaseStyles } from "twin.macro";
 
-import {Navigation,Footer} from ".";
+import { Navigation, Footer } from ".";
+import { Container } from "../Styles/CustomStyles.styles";
 
 const layout = ({ children }) => {
   return (
@@ -10,8 +11,10 @@ const layout = ({ children }) => {
       <header>
         <Navigation />
       </header>
-      <main>{children}</main>
-      <Footer/>
+      <main>
+        <Container>{children}</Container>
+      </main>
+      <Footer />
     </>
   );
 };

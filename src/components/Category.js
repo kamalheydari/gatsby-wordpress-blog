@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 
-import { CatWrapper, ImageMini } from "../styles/CustomStyles.styles";
+import { CatWrapper, ImageCategory } from "../styles/CustomStyles.styles";
 
 const Category = ({ image, link, text,cat }) => {
   return (
     <CatWrapper>
       <div className='cat__img'>
-        <ImageMini
+        <ImageCategory
           className='cat__img'
           image={image}
           width={600}
