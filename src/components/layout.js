@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalStyles as BaseStyles } from "twin.macro";
 
-import Navigation from "./Navigation";
+import {Navigation,Footer} from ".";
 
 const layout = ({ children }) => {
   return (
@@ -11,6 +11,7 @@ const layout = ({ children }) => {
         <Navigation />
       </header>
       <main>{children}</main>
+      <Footer/>
     </>
   );
 };

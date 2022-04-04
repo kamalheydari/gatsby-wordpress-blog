@@ -17,22 +17,25 @@ export const NavigationWrapper = styled.nav`
 `;
 
 export const PostWrapper = styled.article`
-  ${tw`max-w-5xl mx-auto my-8 p-3 md:flex relative`}
+  ${tw`max-w-5xl mx-auto my-8 p-3 md:flex md:gap-4 `}
 
   p {
-    ${tw`text-sm md:text-lg text-gray-500 my-2 mb-6`}
+    ${tw`text-sm lg:text-lg text-gray-500 my-2 mb-auto`}
   }
   .post__link {
-    ${tw`text-blue-800 text-lg no-underline absolute bottom-2 hover:text-blue-900`}
+    ${tw`text-blue-800 text-lg no-underline block md:mt-14 hover:text-blue-900`}
   }
 `;
 
 export const ImageMini = styled(GatsbyImage)`
-  ${tw`max-h-52 min-h-full md:w-96 mr-4 rounded`}
+  ${tw`max-h-52 min-h-full w-full md:w-96 md:mr-2 rounded`}
 `;
 
 export const ImageFull = styled(GatsbyImage)`
   ${tw`max-h-96 rounded mb-2`}
+`;
+export const ImageBanner = styled(GatsbyImage)`
+  ${tw`block mx-auto max-w-5xl my-4 `}
 `;
 
 export const Title = tw.h2`
@@ -57,3 +60,32 @@ export const Content = styled.div`
     ${tw`border-l-4 border-l-blue-500 pl-4`}
   }
 `;
+
+export const CategoriesWrapper = styled.div`
+  ${tw`mx-auto max-w-5xl my-6`}
+
+  div:nth-child(even) {
+    ${tw`flex-row-reverse`}
+  }
+`;
+
+export const CatWrapper = styled.div`
+  ${tw`mx-2 my-6 flex p-1`}
+
+  .cat__img {
+    ${tw`m-3 rounded`}
+  }
+
+  .cat__desc {
+    p {
+      ${tw`text-justify`}
+    }
+    a {
+      ${tw`bg-green-400 text-white py-1 px-2 mx-auto mt-4 block max-w-max rounded`}
+    }
+  }
+`;
+
+export const SectionTitle = tw.h2`text-green-600 text-center font-bold text-3xl `;
+
+export const FooterWrapper = tw.footer`py-4 border-t-2 border-b-gray-300 text-center text-2xl text-gray-600`;
