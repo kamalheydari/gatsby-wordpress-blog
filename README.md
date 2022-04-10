@@ -2,7 +2,7 @@
 
 ## Demo
 See demo on Netlify
-[React Fake Store](https://calm-halva-cd9921.netlify.app/)
+[Gatsby Wordpress Blog](https://calm-halva-cd9921.netlify.app/)
 
 ![demo](demo.png)
 
